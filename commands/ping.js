@@ -39,7 +39,7 @@ async function pingCommand(sock, chatId, message) {
 
         const botInfo = `
 ╭────────────────────────
-│     𝗟𝗮𝗱𝘆_𝗕𝗲𝗹𝗹𝗮🎀  STATUS
+│     VOST-BOT STATUS
 ├────────────────────────
 │  🚀 Response: ${ping.toString().padEnd(6)} ms
 │  ⏳ Uptime:   ${uptime.padEnd(14)}
@@ -58,14 +58,14 @@ async function pingCommand(sock, chatId, message) {
         await sock.sendMessage(chatId, { 
             text: botInfo, 
             quoted: message,
-            contextInfo: {
+            /*contextInfo: {
                 forwardingScore: 1,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363399707841760@newsletter',
                     newsletterName: '𝗟𝗮𝗱𝘆_𝗕𝗲𝗹𝗹𝗮🎀',
                     serverMessageId: -1
-                }
+                }*/
             }
         });
 
@@ -84,14 +84,14 @@ async function pingCommand(sock, chatId, message) {
         console.error('Error in ping command:', error);
         await sock.sendMessage(chatId, { 
             text: '❌ Failed to get bot status',
-            contextInfo: {
+           /* contextInfo: {
                 forwardingScore: 1,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363399707841760@newsletter',
                     newsletterName: '𝗟𝗮𝗱𝘆_𝗕𝗲𝗹𝗹𝗮🎀',
                     serverMessageId: -1
-                }
+                }*/
             }
         });
     }
