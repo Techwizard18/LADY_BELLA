@@ -58,14 +58,14 @@ async function pingCommand(sock, chatId, message) {
         await sock.sendMessage(chatId, { 
             text: botInfo, 
             quoted: message,
-            /*contextInfo: {
+            contextInfo: {
                 forwardingScore: 1,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363399707841760@newsletter',
                     newsletterName: '𝗟𝗮𝗱𝘆_𝗕𝗲𝗹𝗹𝗮🎀',
                     serverMessageId: -1
-                }*/
+                }
             }
         });
 
