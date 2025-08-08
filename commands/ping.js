@@ -50,7 +50,7 @@ async function pingCommand(sock, chatId, message) {
 │  👥 Users:    ${global.users?.length || 0} active
 ╰──────────────────────────────
 ╭──────────────────────────────
-│  🔗 GitHub:   https://github.com/SNOWBIRD0074/BEN-10-MD
+│  🔗 GitHub:   https://github.com/Vosty17
 │  📢 Channel:  ${settings.channelLink || 'whatsapp.com/channel/https://whatsapp.com/channel/0029Vb5nSebFy722d2NEeU3C'}
 ╰──────────────────────────────
 `.trim();
