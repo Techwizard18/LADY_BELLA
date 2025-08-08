@@ -51,7 +51,7 @@ async function pingCommand(sock, chatId, message) {
 ╰──────────────────────────────
 ╭──────────────────────────────
 │  🔗 GitHub:   https://github.com/Vosty17
-│  📢 Channel:  ${settings.channelLink || 'whatsapp.com/channel/https://whatsapp.com/channel/0029Vb5nSebFy722d2NEeU3C'}
+│  📢 Channel:  ${settings.channelLink || 'https://whatsapp.com/channel/0029Vb9zS0hFi8xU2eEHmM3H'}
 ╰──────────────────────────────
 `.trim();
 
